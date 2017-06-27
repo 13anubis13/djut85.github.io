@@ -1,0 +1,643 @@
+/*====================================================Шрифты=========================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot');
+    src: url('fonts/icomoon.eot') format('embedded-opentype'),
+         url('fonts/icomoon.woff') format('woff'),
+         url('fonts/icomoon.ttf') format('truetype'),
+         url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('fonts/MontserratRegular.eot');
+    src: url('fonts/MontserratRegular.eot') format('embedded-opentype'),
+         url('fonts/MontserratRegular.woff2') format('woff2'),
+         url('fonts/MontserratRegular.woff') format('woff'),
+         url('fonts/MontserratRegular.ttf') format('truetype'),
+         url('fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('fonts/MontserratBold.eot');
+    src: url('fonts/MontserratBold.eot') format('embedded-opentype'),
+         url('fonts/MontserratBold.woff2') format('woff2'),
+         url('fonts/MontserratBold.woff') format('woff'),
+         url('fonts/MontserratBold.ttf') format('truetype'),
+         url('fonts/MontserratBold.svg#MontserratBold') format('svg');
+    font-weight: bold;
+}
+
+.mon_rg {
+    font-family: 'MontserratRegular';
+}
+
+.mon_bld {
+    font-family: 'MontserratBold';
+}
+
+.rob_rg {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+.rob_bld {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+/*==============================================Для всех секций======================================================*/
+a {
+    &:hover, &:visited, &:active, &:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+}
+.underline {
+    display: inline-block;
+    height: 20px;
+    width: 50px;
+    border-top: solid 2px #555555;
+}
+h4 {
+    .mon_rg;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+h5 {
+    .rob_rg;
+    font-size: 16px;
+    margin-top: 0;
+    //добавить margin-top: 70px;
+}
+//для размера шрифта попробовать em
+/*===================================================Навигация======================================================*/
+
+.navbar-custom {
+    .navbar-toggle {
+        border-color: #fff;
+        &:hover, &:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+    .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-brand {
+        padding-left: 30px;
+        .mon_bld;
+        font-size: 24px;
+        color: #fff;
+    }
+    .navbar-nav {
+        float: right;
+    }
+    .nav {
+        a {
+            .mon_rg;
+            font-size: 14px;
+            color: #fff;
+            &:hover {
+                background-color: #fff;
+                color: #c0301c;
+            }
+        }
+    }
+}
+
+.nav_scrolled {
+    background-color: rgba(85,85,85,.9);
+}
+
+/*=====================================================Хедер========================================================*/
+
+header {
+    .rob_rg;
+    color: #fff;
+    .homepage {
+        min-height: 700px;
+        background: url(../img/header_img.jpg) no-repeat scroll center center / cover;
+    }
+    .bg_layer {
+        padding-top: 230px;
+        background-color: rgba(0,0,0,.45);
+        min-height: 700px;
+    }
+    h1 {
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    button {
+        .mon_rg;
+        font-size: 16px;
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 17px 32px;
+        &:hover {
+            color: #c0301c;
+            background: #fff;
+        }
+    }
+}
+
+/*=====================================================Services======================================================*/
+
+#services {
+    margin-top: 100px;
+    color: #555555;
+    .row {
+        padding: 0 6%;
+    }
+    .service_icon {
+        display: inline-block;
+        height: 90px;
+        width: 90px;
+        line-height: 86px;
+        border-radius: 50px;
+        border: 2px solid #dddddd;
+        font-size: 40px;
+        color: #c0301c;
+        margin-top: 60px;
+        &:hover {
+            color: #fff;
+            background-color: #c0301c; 
+        }
+    }
+    .service_title {
+        text-transform: uppercase;
+        .mon_rg;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .serice_description {
+        .rob_rg;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+
+/*=====================================================About=======================================================*/
+
+#about {
+    margin-top: 190px;
+    color: #555555;
+    #txt_section_left {
+        padding-left: 0;
+    }
+    .txt_section {
+        margin: 75px 0;
+        text-align: left;
+        p {
+            .rob_rg;
+            font-size: 14px;
+        }
+    }
+    .social {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        padding-top: 65%;
+        margin: 0 15px 74px 15px;
+        list-style: none;
+        &:hover {
+            background-color: rgba(0,0,0,.5);
+            li {
+                visibility: visible;
+            }
+        }
+        li {
+            display: inline;
+            visibility: hidden;
+            a {
+                display: inline-block;
+                height: 28px;
+                width: 28px;
+                font-size: 16px;
+                line-height: 28px;
+                outline: none;
+                color: #fff;
+                &:hover {
+                    background-color: #c0301c;
+                }
+            }
+        }
+    }
+    .carousel-control {
+        background: none;
+        width: auto;
+    }
+    .icon-angle-right, .icon-angle-left {
+        position: absolute;
+        display: inline-block;
+        z-index: 5;
+        background: #c2c2c2;
+        top: 35%;
+        height: 38px;
+        width: 35px;
+        font-size: 24px;
+        line-height: 38px;
+        &:hover {
+            background: #c0301c;
+            color: #dddddd;
+        }
+    }
+    .icon-angle-right {
+        right: 15px;
+        margin-right: -15px;
+    }
+    .persons_name {
+        .mon_rg;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .persons_position {
+        .rob_rg;
+        font-size: 13px;
+        margin-top: 15px;
+        margin-bottom: 0;
+        
+    }
+}
+/*=====================================================Works=========================================================*/
+
+#works {
+    margin-top: 190px;
+    color: #555555;
+    .controls {
+        margin-bottom: 60px;
+    }
+    .control {
+        background: none;
+        border: none;
+        .rob_rg;
+        font-size: 16px;
+    }
+    .mixitup-control-active {
+        color: #c0301c;
+    }
+    .mix {
+        padding-top: 30px;
+        padding-right: 25px; 
+        .img_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 30px 25px 0 15px;
+            div {
+                visibility: hidden;
+                margin-top: 25%;
+                color: #fff;
+            }
+            .works_name {
+                .mon_rg;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .category {
+                .rob_rg;
+                font-size: 12px;
+                margin-bottom: 25px;
+            }
+            &:hover {
+                div {
+                    visibility: visible;
+                }
+                background: rgba(192,48,28,.7);
+            }
+            
+        }
+        button {
+            text-transform: uppercase;
+            .rob_rg;
+            font-size: 14px;
+            background: #fff;
+            color: #c0301c;
+            border: none;
+            height: 38px;
+            width: 100px;
+            line-height: 38px;
+            &:after {
+                font-family: 'icomoon';
+                content: "\f105";
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+/*=================================================Action============================================================*/
+
+#action {
+    margin-top: 100px;
+    .parallax {
+        height: 500px;
+        position: relative;
+        color: #fff;
+        overflow: hidden;
+        img {
+            position: absolute;
+            width: 100%;
+            top: -300px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .parallax-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-top: 10%;
+            background-color: rgba(192,48,28,.6);
+        }
+        p {
+            .rob_rg;
+            font-size: 30px;
+            span {
+                text-transform: uppercase;
+            }
+        }
+        button {
+            .rob_rg;
+            font-size: 18px;
+            background-color: transparent;
+            text-transform: uppercase;
+            border: 2px solid #fff;
+            padding: 15px 28px;
+            margin-top: 50px;
+            &:hover {
+                color: #c0301c;
+                background: #fff;
+            }
+        }
+    }
+}
+
+/*=================================================Blog============================================================*/
+
+#blog {
+    margin-top: 100px;
+    color: #555555;
+    h5 {
+        margin-bottom: 70px;
+    }
+    .blog-entry {
+        text-align: left;
+    }
+    .separator {
+        border-top: 1px solid #dddddd;
+        margin: 35px 0;
+    }
+    .date {
+        color: #777777;
+        .mon_bld;
+        border: 2px solid #555555;
+        width: 76px;
+        height: 76px;
+        text-align: center;
+        padding-top: 8px;
+    }
+    .day {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .month {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .blog-caption {
+        .mon_rg;
+        color: #555555;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-top: 12px;
+        margin-bottom: 0;
+        &:hover {
+            color: #c0301c;
+        }
+    }
+    .blog-info {
+        .rob_rg;
+        font-size: 13px;
+        color: #919191;
+        padding-top: 5px;
+        a {
+            color: #919191;
+            &:hover {
+                color: #c0301c;
+            }
+        }
+    }
+    .blog-text {
+        .rob_rg;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .more {
+        .rob_bld;
+        display: inline-block;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #777777;
+        margin-top: 25px;
+        &:hover {
+            color: #c0301c;
+        }
+    }
+}
+
+/*=================================================Clients===========================================================*/
+
+#clients {
+    margin-top: 160px;
+    .rob_rg;
+    color: #555555;
+    #clientsCarousel {
+        margin-top: 80px;
+        .carousel-indicators {
+            top: 170px;
+            li {
+                width: 13px;
+                height: 13px;
+                background-color: #dddddd;
+                border: none;
+            }
+            .active {
+                width: 15px;
+                height: 15px;
+                background-color: #c0301c;
+            }
+        }
+    }
+    .feedback {
+        font-size: 18px;
+    } 
+    .feedback_author {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}
+
+/*=================================================Contacts=========================================================*/
+
+#contacts {
+    margin-top: 240px;
+    color: #555555;
+    h5 {
+        margin-bottom: 70px;
+    }
+    .icon {
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+    .icon-map-marker {
+        font-size: 20px;
+    }
+    .icon-mobile {
+        font-size: 24px;
+    }
+    .icon-envelope-o {
+        font-size: 12px;
+    }
+    .contacts_label {
+        text-transform: uppercase;
+        .mon_rg;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .contacts_data {
+        margin-left: 25px;
+        .rob_rg;   
+        font-size: 12px;
+        margin-bottom: 35px;
+        line-height: 1.5;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    input {
+        height: 44px;
+    }
+    textarea {
+        height: 104px;
+        padding: 15px 12px;
+    }
+    input, textarea {
+        border-radius: 0;
+        border: 1px solid #555555;
+        font-size: 12px;
+        .rob_rg;
+        &::-moz-placeholder {
+            opacity: .8;
+            color: #555555;
+            text-transform: uppercase;
+        }
+        &::-webkit-input-placeholder {
+            opacity: .8;
+            color: #555555;
+            text-transform: uppercase;
+        }
+        &:focus::-moz-placeholder {
+            color: transparent;
+        }
+        &:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+        &:focus {
+            border-color: #c0301c;
+            box-shadow: none;
+        }
+    }
+    .btn_send {
+        text-transform: uppercase;
+        color: #555555;
+        padding: 15px 38px;
+        font-size: 12px;
+        border: 1px solid #555555;
+        .rob_rg;
+        white-space: nowrap;
+        text-align: center;
+        &:hover {
+            background-color: #c0301c;
+            color: #fff;
+            border: none;
+        }
+    }
+    label {
+        .rob_rg;
+        font-size: 12px;
+        color: #555555;
+        text-align: left;
+        margin-left: 35px;
+        padding-top: 15px;
+        &:before {
+            content: '*';
+            color: #c0301c;
+            margin-right: 3px;
+        }
+    }
+}
+
+/*=================================================Footer=========================================================*/
+
+footer {
+    margin-top: 100px;
+    background-color: #c0301c;
+    color: #fff;
+    .underline {
+        margin-top: 30px;
+        border-top: solid 2px #fff;
+    }
+    .social {
+        padding: 0;
+        margin-top: 100px;
+        list-style: none;
+        li {
+            display: inline;
+            padding-right: 14px;
+            a {
+                display: inline-block;
+                height: 35px;
+                width: 35px;
+                border: 2px solid #fff;
+                border-radius: 18px;
+                font-size: 16px;
+                line-height: 35px;
+                outline: none;
+                color: #fff;
+                &:hover {
+                    background-color: #fff;
+                    color: #c0301c;
+                }
+            }
+        }
+    }
+    .copyright {
+        margin-top: 25px;
+        margin-bottom: 100px;
+        .rob_rg;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
