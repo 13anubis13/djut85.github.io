@@ -1,7 +1,6 @@
 /*====================================================Шрифты=========================================================*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
-@import "media.less";
 
 @font-face {
     font-family: 'icomoon';
@@ -182,7 +181,7 @@ header {
         font-size: 14px;
         margin-top: 30px;
     }
-    .serice_description {
+    .service_description {
         .rob_rg;
         font-size: 14px;
         margin-top: 15px;
@@ -640,5 +639,18 @@ footer {
         .rob_rg;
         font-size: 12px;
         text-transform: uppercase;
+    }
+}
+/*=================================================Адаптив=========================================================*/
+@media (min-width: 0px) and (max-width: 480px) {
+    #services {
+        .service_description {
+            font-size: 10px;
+        }
+    }
+    #about {
+        #txt_section_left {
+            padding-left: 15px;
+    }
     }
 }
