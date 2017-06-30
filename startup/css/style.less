@@ -571,6 +571,7 @@ header {
     }
     .btn_send {
         text-transform: uppercase;
+        background-color: #fff;
         color: #555555;
         padding: 15px 38px;
         font-size: 12px;
@@ -643,6 +644,10 @@ footer {
 }
 /*=================================================Адаптив=========================================================*/
 @media (min-width: 0px) and (max-width: 480px) {
+    .navbar-fixed-top {
+        right: 20px;
+        left: 0;
+    }
     #services {
         .service_description {
             font-size: 11px;
@@ -663,6 +668,11 @@ footer {
         }
         .mix {
             margin: 0 5px;
+        }
+    }
+    #action {
+        img {
+            top: 900px;
         }
     }
     #blog {
@@ -689,6 +699,23 @@ footer {
         }
     }
     #contacts {
-        
+        input {
+            margin-bottom: 10px;
+        }
+        .btn_send {
+            &:hover {
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+        }
+        label {
+            margin-left: 0;
+            font-size: 10px;
+        }
+    }
+    footer {
+        .copyright {
+            font-size: 10px;
+        }
     }
 }
